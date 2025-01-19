@@ -113,6 +113,8 @@ jobs:
         exclude:
           - os: ubuntu-20.04
             std: 20
+          - os: ubuntu-latest
+            std: 98
 
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -183,11 +185,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, macos-11]
+        os: [macos-latest, macos-12]
         std: [98, 11, 14, 17, 20]
         config: [Debug, Release]
         exclude:
-          - os: macos-11
+          - os: macos-12
             std: 20
 
     steps:
