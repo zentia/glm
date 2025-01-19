@@ -185,11 +185,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, macos-12]
+        os: [macos-latest, macos-13]
         std: [98, 11, 14, 17, 20]
         config: [Debug, Release]
         exclude:
-          - os: macos-12
+          - os: macos-13
             std: 20
 
     steps:
