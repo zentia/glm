@@ -11,6 +11,10 @@
 #include <ctime>
 #include <vector>
 
+#ifdef GLM_FORCE_INTRINSICS
+#pragma message("GLM_FORCE_INTRINSICS is defined")
+#endif//
+
 static int test_vec4_ctor()
 {
 	int Error = 0;
