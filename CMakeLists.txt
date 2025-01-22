@@ -245,7 +245,8 @@ elseif(GLM_ENABLE_SIMD_SSE2)
 	endif()
 	message(STATUS "GLM: SSE2 instruction set")
 elseif(GLM_ENABLE_SIMD_NEON)
-	add_definitions(-DGLM_FORCE_NEON)
+	add_definitions(-DGLM_FORCE_INTRINSICS)
+
 	message(STATUS "GLM: ARM NEON instruction set")
 endif()
 
