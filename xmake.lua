@@ -1,0 +1,5 @@
+target("glm")
+    set_kind("$(kind)")
+    add_includedirs("./", {public = true})
+    add_headerfiles("glm/**.hpp")
+    add_files("glm/**.cpp")
